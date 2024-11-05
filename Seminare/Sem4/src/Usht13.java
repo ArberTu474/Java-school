@@ -20,7 +20,7 @@ public class Usht13 {
 
     for (int i = 1; i < n * 2; i++) {
       for (int j = 1; j < n * 2; j++) {
-        if (j <= n - i || j >= n + i || (i > n && j < i + 1 - n) ||(i > n && j > 2 * n - (i - n + 1))) {
+        if (j <= n - i || j >= n + i || (i > n && j < i + 1 - n) || (i > n && j > 2 * n - (i - n + 1))) {
           System.out.print("  ");
         } else {
           System.out.print("* ");
@@ -28,5 +28,7 @@ public class Usht13 {
       }
       System.out.println();
     }
+
+    scanner.close();
   }
 }
