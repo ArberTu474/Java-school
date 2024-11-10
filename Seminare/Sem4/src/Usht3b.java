@@ -11,10 +11,14 @@ public class Usht3b {
 
     String zanore = "aeëiouy";
 
-    for (int i = 0; i < input.length(); i++) {
-      if (zanore.contains(Character.toString(input.charAt(i)))) {
-        input = input.replace(Character.toString(input.charAt(i)), "_");
-      }
+    // for (int i = 0; i < input.length(); i++) {
+    // if (zanore.contains(Character.toString(input.charAt(i)))) {
+    // input = input.replace(Character.toString(input.charAt(i)), "_");
+    // }
+    // }
+
+    for (int i = 0; i < zanore.length(); i++) {
+      input = input.replaceAll(Character.toString(zanore.charAt(i)), "_");
     }
 
     System.out.println(input);

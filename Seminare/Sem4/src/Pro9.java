@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class Pro9 {
   public static void main(String[] args) {
-    final int ITERATIONS = 5;
+    final int ITERATIONS = 10;
     final int M_HEIGHT = ITERATIONS * 2 + 1;
     final int M_WIDTH = ITERATIONS * 2 + 1;
 
