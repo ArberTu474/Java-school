@@ -29,9 +29,12 @@ public class Usht6 {
       count++;
     }
 
-    double _x = sum / count;
+    double _x = (double) sum / count;
+    double num = xi2 - (sum * sum / count);
 
-    double s = Math.sqrt((xi2 - (sum * sum / count)) / count - 1);
+    double s = Math.sqrt(num / (count - 1));
+
+    System.out.println(s);
 
     System.out.printf("Sum:\t%.2f\n", _x);
     System.out.printf("D:\t%.2f\n", s);
@@ -39,3 +42,7 @@ public class Usht6 {
     scanner.close();
   }
 }
+
+// average -= 2
+// sum = 6
+// xi2 = 14
