@@ -26,10 +26,13 @@ public class Extra9 {
     char[][] baseBgrid = new char[HEIGHT][WIDTH];
     readCSV(baseBgrid);
 
-    for (int i = 0; i < 190; i++) {
+    for (int i = 0; i < 250; i++) {
       System.out.println("Gen: " + (i + 1));
       printGrid(newGen(baseBgrid, i));
       try {
+        if (i == 0) {
+          Thread.sleep(1200); // Sleep for one second
+        }
         Thread.sleep(300); // Sleep for one second
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
@@ -42,7 +45,7 @@ public class Extra9 {
 
   public static void readCSV(char[][] grid) {
     System.out.println(System.getProperty("user.dir"));
-    String file = "./files/base.csv";
+    String file = "../files/base.csv";
     BufferedReader reader = null;
 
     String line = "";
