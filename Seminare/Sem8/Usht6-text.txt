@@ -1,0 +1,6 @@
+public class Usht6_text {
+  public static void main(String[] args) {
+    // Display a greeting in the console window
+    System.out.println("Hello, World!");
+  }
+}
