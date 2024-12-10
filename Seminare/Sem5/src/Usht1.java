@@ -25,6 +25,13 @@ public class Usht1 {
         return false;
     }
 
+    public static boolean allDifferent(double x, double y, double z) {
+        if (x != y && y != z) {
+            return true;
+        }
+        return false;
+    }
+
     public static boolean sorted(double x, double y, double z) {
         if (x < y && y < z) {
             return true;
