@@ -1,4 +1,4 @@
-// Shkruani një program Java që afishon shumën e dhjetë numrave pozitivë 1+2+....+10.
+// Shkruani një program Java që afishon shumën e dhjetë numrave pozitivë 1+2+....+10
 
 public class Usht1 {
     public static void main(String[] args) throws Exception {
